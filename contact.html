@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Orphans of the world</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Orphans Of the World</h3>
+                </div>
+
+
+               
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                              
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                               
+                                <span>Contact us</span>
+                            </button>
+                     
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">Home</a></li>
+                                <!---->
+                                <li><a href="#">Market</a></li>
+                                <li><a href="#">Kyc</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
+               
+              
+                <section class="probootstrap-section">
+                    <div class="container">
+                      <div class="row">
+                      <div class="col-md-5 probootstrap-animate">
+                        <form action="process.php" method="post" class="probootstrap-form">
+                          <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="subject">Phone</label>
+                            <input type="number" class="form-control" id="phone" name="phone">
+                          </div>
+                          <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Send Message">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6 col-md-push-1 probootstrap-animate">
+                        
+                        
+                      
+            
+                        
+                      </div>
+                    </div>
+                    </div>
+                  </section>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-8 text-left">
+                        <p>&copy; 2018 Orphans Of The World. All Rights Reserved.</p>
+                      </div>
+                      <div class="col-md-4 probootstrap-back-to-top">
+                        <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        </div>
+      
+
+
+
+
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
